@@ -1,10 +1,53 @@
-.App {
+/* .App {
   text-align: center;
-}
+} */
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  border: 1px solid black;
+  margin: 20px;
+}
+
+.header {
+  padding: 0 10px;
+  border-bottom: 1px solid black;
+}
+
+.footer {
+  background: black;
+  color: white;
+  text-align: center;
+}
+
+.car-container {
+  width: 300px;
+}
+
+.car {
+  position: relative;
+  /* left: 0; */
+  overflow: hidden;
+}
+
+.car-skeleton {
+  position: absolute;
+  /* left: 0; */
+}
+
+.range-input {
+  cursor: pointer;
+  width: 100%;
+}
+
+.hide {
+  display: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -32,6 +75,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
